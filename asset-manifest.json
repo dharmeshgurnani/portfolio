@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c1f4ec0c.chunk.css",
-    "main.js": "/portfolio/static/js/main.2ec00f1e.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.2ec00f1e.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.990a00be.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.990a00be.js.map",
-    "static/js/2.23f8763c.chunk.js": "/portfolio/static/js/2.23f8763c.chunk.js",
-    "static/js/2.23f8763c.chunk.js.map": "/portfolio/static/js/2.23f8763c.chunk.js.map",
-    "static/js/3.3ceb7724.chunk.js": "/portfolio/static/js/3.3ceb7724.chunk.js",
-    "static/js/3.3ceb7724.chunk.js.map": "/portfolio/static/js/3.3ceb7724.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.8b269f08.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.8b269f08.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.44619bce.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.44619bce.js.map",
+    "static/js/2.98e69469.chunk.js": "/portfolio/static/js/2.98e69469.chunk.js",
+    "static/js/2.98e69469.chunk.js.map": "/portfolio/static/js/2.98e69469.chunk.js.map",
+    "static/js/3.8b402c23.chunk.js": "/portfolio/static/js/3.8b402c23.chunk.js",
+    "static/js/3.8b402c23.chunk.js.map": "/portfolio/static/js/3.8b402c23.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.c1f4ec0c.chunk.css.map": "/portfolio/static/css/main.c1f4ec0c.chunk.css.map",
-    "static/js/2.23f8763c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.23f8763c.chunk.js.LICENSE.txt",
+    "static/js/2.98e69469.chunk.js.LICENSE.txt": "/portfolio/static/js/2.98e69469.chunk.js.LICENSE.txt",
     "static/media/Montserrat-Bold.079ca05d.ttf": "/portfolio/static/media/Montserrat-Bold.079ca05d.ttf",
     "static/media/Montserrat-SemiBold.fa8441f3.ttf": "/portfolio/static/media/Montserrat-SemiBold.fa8441f3.ttf",
     "static/media/RobotoMono-Regular.418a8f9f.ttf": "/portfolio/static/media/RobotoMono-Regular.418a8f9f.ttf",
@@ -21,9 +21,9 @@
     "static/media/social-media-arrow.f5e093ce.svg": "/portfolio/static/media/social-media-arrow.f5e093ce.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.990a00be.js",
-    "static/js/2.23f8763c.chunk.js",
+    "static/js/runtime-main.44619bce.js",
+    "static/js/2.98e69469.chunk.js",
     "static/css/main.c1f4ec0c.chunk.css",
-    "static/js/main.2ec00f1e.chunk.js"
+    "static/js/main.8b269f08.chunk.js"
   ]
 }
