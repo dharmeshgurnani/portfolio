@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @dharmesh17
+- 👋 Hi, I’m dharmesh gurnani
 - 👀 I’m interested in programing and UX UI designing 
 - 🌱 I’m currently learning React JS
 - 💞️ I’m looking to collaborate on OpenSource Projects

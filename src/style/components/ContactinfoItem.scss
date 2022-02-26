@@ -1,0 +1,23 @@
+.contactinfoItem {
+  padding: 2rem;
+  background-image: linear-gradient(var(--deep-dark),var(--Background));
+  border-top: 1px solid;
+  border-right: 1px solid;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  .icon {
+    color: var(--OnSurface);
+    background-color: var(--OnSecondary);
+    padding: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  svg {
+    width: 3.5rem;
+  }
+}

@@ -1,0 +1,47 @@
+.button-wrapper {
+  margin-top: 2rem;
+  .button {
+    font-size: 2.2rem;
+    background-color: var(--OnPrimary);
+    padding: 0.7em 2em;
+    border: 2px solid var(--OnPrimary);
+    border-radius: 8px;
+    display: inline-block;
+    color: var(--gary-1);
+  }
+
+  @media only screen and (max-width: 768px) {
+    .button {
+      font-size: 1.8rem;
+    }
+  }
+
+  .aws-btn {
+    --button-default-height: 48px;
+    --button-default-font-size: 2.2rem;
+    --button-default-border-radius: 6px;
+    --button-horizontal-padding: 20px;
+    --button-raise-level: 5px;
+    --button-hover-pressure: 2;
+    --transform-speed: .185s;
+    --button-primary-color: var(--OnPrimary);
+    --button-primary-color-dark:var(--OnSecondary);
+    --button-primary-color-light: var(--OnSecondary);
+    --button-primary-color-hover: #95c9e4;
+    --button-primary-border: none;
+    --button-secondary-color: #fafafa;
+    --button-secondary-color-dark: #67cbc3;
+    --button-secondary-color-light: #349890;
+    --button-secondary-color-hover: #ecf9f8;
+    --button-secondary-border: 2px solid #b3e5e1;
+    --button-anchor-color: #95d44a;
+    --button-anchor-color-dark: #52a934;
+    --button-anchor-color-light: #3f8228;
+    --button-anchor-color-hover: #89cf35;
+    --button-anchor-border: 2px solid #5bbd3a;
+  }
+
+  .aws-btn__content > span{
+    color: inherit;
+  }
+}

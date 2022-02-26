@@ -1,40 +1,9 @@
 import React , { useRef } from 'react';
-import styled from 'styled-components';
+import '../style/components/ContactBanner.scss';
 import Button from './Button';
 import PText from './PText';
 import { useIntersection } from 'react-use';
 import { gsap, Power4} from "gsap";
-
-const ContactBannerStyles = styled.div`
-  padding: 5rem 0;
-  .contactBanner__wrapper {
-    background-image: linear-gradient(var(--deep-dark),var(--dark-bg));
-    border-right: 1px solid;
-    border-left: 1px solid;
-    border-radius: 12px;
-    padding: 5rem 0rem;
-    text-align: center;
-    opacity: 0;
-    y: 60px;
-
-    &:hover {
-      border-color:  var(--hoverAcent);
-    }
-    .para {
-      max-width: 700px
-    }
-  }
-
-  .contactBanner__heading {
-    font-size: 4rem;
-    margin-bottom: 2rem;
-  }
-  @media only screen and (max-width: 768px) {
-    .contactBanner__heading {
-      font-size: 2.8rem;
-    }
-  }
-`;
 
 export default function ContactBanner() {
   const contactBannerRef = useRef(null);
@@ -68,7 +37,7 @@ export default function ContactBanner() {
   intersection && intersection.intersectionRatio < 0.1 ? fadeOut('.contactBanner__wrapper .fadeInUp') : fadeInUp('.fadeInUp');
 
   return (
-    <ContactBannerStyles>
+    <div className="ContactBanner">
       <div className="container">
         <div ref ={contactBannerRef} className="contactBanner__wrapper fadeInUp">
           <PText>
@@ -79,6 +48,6 @@ export default function ContactBanner() {
           <Button btnText="Contact Now" btnLink="/contact" />
         </div>
       </div>
-    </ContactBannerStyles>
+    </div>
   );
 }

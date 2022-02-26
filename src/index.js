@@ -1,18 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import GlobalStyles from './style/GlobalStyle';
-import Typography from './style/Typography';
 import App from './App';
 import CustomCursor from './components/CustomCursor';
 import CustomCursorManager from './components/CustomCursor/context/manager.tsx';
 import reportWebVitals from './reportWebVitals';
 
+import './style/GlobalStyle.scss';
+import './style/Typography.scss';
+
 ReactDOM.render(
   <CustomCursorManager>
     <CustomCursor />
     <React.StrictMode>
-      <GlobalStyles />
-      <Typography />
       <App />
     </React.StrictMode>
   </CustomCursorManager>,

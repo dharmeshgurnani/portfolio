@@ -1,0 +1,126 @@
+{
+    "background": {
+      "color": {
+        "value": "var(--Background)"
+      },
+      "position": "fixed",
+      "repeat": "no-repeat",
+      "size": "20%"
+    },
+    "fullScreen": {
+      "enable": true,
+      "zIndex": -1
+    },
+    "interactivity": {
+      "events": {
+        "onClick": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onHover": {
+          "enable": true,
+          "mode": "connect",
+          "parallax": {
+            "enable": true,
+            "force": 30
+          }
+        }
+      },
+      "modes": {
+        "bubble": {
+          "distance": 250,
+          "duration": 2,
+          "opacity": 0,
+          "size": 0
+        },
+        "grab": {
+          "distance": 400
+        },
+        "repulse": {
+          "distance": 400
+        },
+        "connect":{
+          "distance": 100,
+          "lineLinked":{
+            "opacity":0.2
+          }
+        }
+      }
+    },
+    "particles": {
+      "shape": {
+        "type": ["polygon","edge","circle"],
+        "options": {
+          "polygon": {
+            "sides": 7
+          },
+          "character": {
+                "value":["dharmeshgurnani"],
+                "font": "Verdana",
+                "style": "",
+                "weight": ""
+            }
+        }
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "links": {
+        "color": {
+          "value": "#ffffff"
+        },
+        "distance": 150,
+        "opacity": 0.4
+      },
+      "move": {
+        "enable": true,
+        "random": true,
+        "speed": 0.5,
+        "attract": {
+          "rotate": {
+            "x": 100,
+            "y": 10
+          }
+        },
+        "outModes": {
+          "bottom": "out",
+          "left": "out",
+          "right": "out",
+          "top": "out"
+        }
+      },
+      "number": {
+        "density": {
+          "enable": true
+        },
+        "value": 300
+      },
+      "opacity": {
+        "random": {
+          "enable": true
+        },
+        "value": {
+          "min": 0,
+          "max": 1
+        },
+        "animation": {
+          "enable": true,
+          "speed": 1,
+          "minimumValue": 0
+        }
+      },
+      "size": {
+        "random": {
+          "enable": true
+        },
+        "value": {
+          "min": 0.5,
+          "max": 1
+        },
+        "animation": {
+          "speed": 4,
+          "minimumValue": 0.3
+        }
+      }
+    }
+  }

@@ -1,29 +1,10 @@
 import React, { useRef } from 'react';
 import { MdDesktopMac, MdCode, MdCloud } from 'react-icons/md';
-import styled from 'styled-components';
 import SectionTitle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
 import { useIntersection } from 'react-use';
 import { gsap, Power4} from "gsap";
-
-const ServicesItemsStyles = styled.div`
-  padding: 10rem 0;
-  .services__allItems {
-    display: flex;
-    gap: 10rem;
-    justify-content: space-between;
-    margin-top: 5rem;
-  }
-  @media only screen and (max-width: 768px) {
-    .services__allItems {
-      flex-direction: column;
-      max-width: 350px;
-      margin: 0 auto;
-      margin-top: 5rem;
-      gap: 5rem;
-    }
-  }
-`;
+import '../style/components/ServicesSection.scss';
 
 export default function ServicesSection() {
   const SectionContainer = useRef(null);
@@ -58,7 +39,7 @@ export default function ServicesSection() {
   intersection && intersection.intersectionRatio < 0.2 ? fadeOut('.services__allItems .fadeInUp') : fadeInUp('.services__allItems .fadeInUp');
 
   return (
-    <ServicesItemsStyles>
+    <div className="ServicesSection">
       <div className="container">
         <SectionTitle subheading="What i can do" heading="Services" />
         <div ref ={SectionContainer} className="services__allItems ">
@@ -79,6 +60,6 @@ export default function ServicesSection() {
           />
         </div>
       </div>
-    </ServicesItemsStyles>
+    </div>
   );
 }

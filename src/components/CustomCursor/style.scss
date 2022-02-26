@@ -16,7 +16,7 @@
   .main-cursor-background {
     width: 30px;
     height: 30px;
-    background: var(--gray-1);
+    background: var(--OnPrimary);
     border-radius: 50%;
   }
 }
@@ -29,7 +29,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 1px  solid var(--white);
+    border: 1px  solid var(--OnSurface);
     position: relative;
     &:after,
     &:before {
@@ -37,7 +37,7 @@
       width: 3px;
       height: 3px;
       border-radius: 50%;
-      background: var(--white);
+      background: var(--OnSurface);
       display: block;
       position: absolute;
       top: 50%;

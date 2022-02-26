@@ -1,5 +1,0 @@
-- 👋 Hi, I’m @dharmesh17
-- 👀 I’m interested in programing and UX UI designing 
-- 🌱 I’m currently learning React JS
-- 💞️ I’m looking to collaborate on OpenSource Projects
-- 📫 How to reach me just mail me at dharmeshgurnani@protonmail.com

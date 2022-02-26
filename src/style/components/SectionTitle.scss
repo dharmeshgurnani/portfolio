@@ -1,0 +1,35 @@
+.SectiionTitle {
+  text-align: center;
+  p {
+    font-family: 'RobotoMono Regular';
+    font-size: 2rem;
+  }
+  h2 {
+    font-family: 'Montserrat Bold';
+    font-size: 6rem;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+
+    ::after {
+      content: "";
+      display: block;
+      position: relative;
+      top:-100;
+      width: 300px;
+      height: 3px;
+      margin-left: 20px;
+      background-color: var(--Surface);
+    }
+    ::before {
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+    p {
+      font-size: 1.2rem;
+    }
+    h2 {
+      font-size: 3.6rem;
+    }
+  }
+}

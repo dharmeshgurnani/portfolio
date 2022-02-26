@@ -18,6 +18,8 @@ const CustomCursor = () => {
     key: -1,
   });
 
+  var _delay;
+
   React.useEffect(() => {
     document.addEventListener('mousemove', (event) => {
       const { clientX, clientY } = event;
@@ -32,6 +34,11 @@ const CustomCursor = () => {
       mainCursor.current.style.transform = `translate3d(${
         mouseX - mainCursor.current.clientWidth / 2
       }px,${mouseY - mainCursor.current.clientHeight / 2}px, 0)`;
+
+      $('.cursor-wrapper').fadeIn();
+      timedelay = 1;
+      clearInterval(_delay);
+      _delay = setInterval(delayCheck, 1000);
     });
 
     return () => {};
@@ -70,6 +77,18 @@ const CustomCursor = () => {
     };
     followMouse();
   }, []);
+
+  // Hide curser on in activity
+  var timedelay = 1;
+  function delayCheck() {
+    if(timedelay == 10) {
+      $('.cursor-wrapper').fadeOut();
+      timedelay = 1;
+    }
+    timedelay = timedelay+1;
+  }
+  _delay = setInterval(delayCheck, 1000);
+
   return (
     <div className={`cursor-wrapper ${type}`}>
       <div className="main-cursor " ref={mainCursor}>

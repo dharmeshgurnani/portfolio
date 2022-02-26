@@ -1,7 +1,39 @@
-{
+
+//TODO: use local svgs in place of cnd onces
+var ParticlesImages = [
+  {
+    "src": "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
+  },
+  {
+    "src": "https://cdn.worldvectorlogo.com/logos/git-icon.svg"
+  },
+  {
+    "src": "https://cdn.worldvectorlogo.com/logos/sass-1.svg"
+  },
+  {
+    "src": "https://cdn.worldvectorlogo.com/logos/salesforce-2.svg"
+  },
+  {
+    "src": "https://cdn.worldvectorlogo.com/logos/html-1.svg"
+  },
+  {
+    "src": "https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
+  },
+  {
+    "src": "https://cdn.worldvectorlogo.com/logos/react-2.svg"
+  },
+  {
+    "src": "https://cdn.worldvectorlogo.com/logos/jquery-2.svg"
+  },
+  {
+    "src": "https://cdn.worldvectorlogo.com/logos/jenkins-1.svg"
+  }
+]
+
+var particlesOptions = {
   "background": {
     "color": {
-      "value": "var(--dark-bg)"
+      "value": "#121212"
     },
     "position": "fixed",
     "repeat": "no-repeat",
@@ -28,7 +60,7 @@
     },
     "modes": {
       "bubble": {
-        "distance": 250,
+        "distance": 20,
         "duration": 2,
         "opacity": 0,
         "size": 0
@@ -43,13 +75,19 @@
   },
   "particles": {
     "color": {
-      "value": "#ffffff"
+      "value": "#94d0cc"
+    },
+    "shape": {
+      "type": "image",
+      "options": {
+        "images": ParticlesImages
+      }
     },
     "links": {
       "color": {
-        "value": "#ffffff"
+        "value": "#94d0cc"
       },
-      "distance": 150,
+      "distance": 1,
       "opacity": 0.4
     },
     "move": {
@@ -62,7 +100,7 @@
       "enable": true,
       "outModes": {
         "bottom": "out",
-        "left": "out", 
+        "left": "out",
         "right": "out",
         "top": "out"
       },
@@ -73,7 +111,7 @@
       "density": {
         "enable": true
       },
-      "value": 40
+      "value": 20
     },
     "opacity": {
       "random": {
@@ -94,8 +132,8 @@
         "enable": true
       },
       "value": {
-        "min": 1,
-        "max": 5
+        "min": 10,
+        "max": 20
       },
       "animation": {
         "speed": 4,
@@ -103,4 +141,11 @@
       }
     }
   }
+};
+
+function particlesProjects() {
+  return (
+    particlesOptions
+  );
 }
+export default particlesProjects;
