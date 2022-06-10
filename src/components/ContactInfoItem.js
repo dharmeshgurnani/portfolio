@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { MdPlace } from 'react-icons/md';
 import PText from './PText';
 import '../style/components/ContactinfoItem.scss'
@@ -15,4 +16,9 @@ export default function ContactInfoItem({
       </div>
     </div>
   );
+}
+
+ContactInfoItem.propTypes = {
+  icon : PropTypes.any,
+  text : PropTypes.string
 }

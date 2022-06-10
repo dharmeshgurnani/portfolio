@@ -4,7 +4,7 @@ import ServicesSection from '../components/ServicesSection';
 import Particles from "react-tsparticles";
 import particlesOptions from "../particlesHome.json";
 //import ProjectsSection from '../components/ProjectsSection';
-import TestimonialsSection from '../components/TestimonialsSection';
+//import TestimonialsSection from '../components/TestimonialsSection';
 import ContactBanner from '../components/ContactBanner';
 import HeroSection from '../components/HeroSection';
 

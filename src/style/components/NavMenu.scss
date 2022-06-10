@@ -89,7 +89,7 @@
     left: 0;
     top: -15rem;
     padding: 0;
-    background: var(--Surface);
+    background: var(--OnSecondary);
     border-right: 0;
     border-bottom: 1px solid;
     .hide-item {
@@ -107,7 +107,7 @@
     .navItems {
       --top: 1rem;
       transition: 0.3s ease transform;
-      background-color: var(--Surface);
+      background-color: var(--OnBackground);
       border: 1px solid;
       padding: 2rem;
       width: 60%;

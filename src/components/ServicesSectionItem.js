@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { MdDesktopMac } from 'react-icons/md';
 import PText from './PText';
 import '../style/components/ServicesSectionItem.scss';
@@ -15,4 +16,10 @@ export default function ServicesSectionItem({
       <PText>{desc}</PText>
     </div>
   );
+}
+
+ServicesSectionItem.propTypes = {
+      icon : PropTypes.any,
+      title : PropTypes.string,
+      desc : PropTypes.string
 }

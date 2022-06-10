@@ -1,25 +1,64 @@
 .footer {
     display: flex;
-    height: 200px;
+    //height: 200px;
     width: calc(100% - 15.5rem);
     transition: color 300ms ease-out, background-color 300ms ease-out;
     margin-top: 50px;
     margin-left: 15.5rem;
-    padding: 20px;
-    background-image: linear-gradient(var(--deep-dark), var(--Background));
+    padding-top: 20px;
+    background: var(--OnSecondary);
     text-align: left;
     font-size: 1.875rem;
     border-top: 1px solid;
     border-color: var(--OnPrimary);
     border-radius: 12px;
-    padding-left: 15px;
     justify-content: center;
+    flex-direction: column;
     gap: 10px;
 
+    .navLogo {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        width: 12rem;
+        height: 12rem;
+        font-size: 1rem;
+        background: var(--deep-dark);
+        border: 1px solid;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .footer-main {
+        display: flex;
+        justify-content: center;
+        padding: 10px 20px;
+
+        .footer-links {
+            flex-direction: column;
+            gap:10px;
+        }
+    }
+
+    .footer-bottom {
+        background-color: var(--OnBackground);
+        padding: 20px 0px;
+    }
+
     .footer-icons {
-        height:30px;
-        width: 30px;
+        min-height: 30px;
+        min-width: 30px;
         margin: 0px 10px;
+    }
+
+    .footer-links {
+        display: flex;
+
+        a {
+            display: flex;
+            align-items: center;
+        }
     }
 
     .footer-left {
@@ -28,20 +67,6 @@
         justify-content: left;
         align-content: left;
         width: 50%;
-
-        .navLogo {
-            display: flex;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
-            width: 12rem;
-            height: 12rem;
-            font-size: 1rem;
-            background: var(--deep-dark);
-            border: 1px solid;
-            margin-top: 20px;
-            margin-bottom: 40px;
-        }
     }
 
     .footer-right {
@@ -49,21 +74,19 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-
-        .footer-links {
-            display: flex;
-            flex-direction: column;
-
-            a {
-                display: flex;
-                align-items: center;
-                margin-bottom: 10px;
-            }
-        }
     }
 
     @media only screen and (max-width: 768px) {
-        width:auto;
+        width: auto;
+        height: auto;
         margin-left: 0;
+
+        .footer-bottom {
+            .footer-links {
+                label {
+                    display: none;
+                }
+            }
+        }
     }
 }

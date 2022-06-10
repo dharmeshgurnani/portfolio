@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ProjectImg from '../assets/images/projectImg.png';
 import '../style/components/ProjectItem.scss';
 
@@ -21,4 +22,11 @@ export default function ProjectItem({
       </div>
     </div>
   );
+}
+
+ProjectItem.propTypes = {
+  img : PropTypes.any,
+  title : PropTypes.string,
+  desc : PropTypes.string,
+  href : PropTypes.string
 }

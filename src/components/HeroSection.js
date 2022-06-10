@@ -1,5 +1,6 @@
 import React from 'react';
-import HeroImg from '../assets/images/hero.png';
+import $ from 'jquery';
+//import HeroImg from '../assets/images/hero.png';
 import Button from './Button';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 import PText from './PText';
@@ -11,8 +12,8 @@ export default function HeroSection() {
     sectionHome.find(".word").removeClass('animated bounceIn');
     sectionHome.find(".word").css('opacity', 1);
     sectionHome.find(".word").mouseenter(function () {
-      var el = jQuery(this);
-      jQuery(this).addClass('animation_rubber');
+      var el = $(this);
+      $(this).addClass('animation_rubber');
       setTimeout(function () {
         el.removeClass('animation_rubber');
       }, 1000);
@@ -23,10 +24,6 @@ export default function HeroSection() {
     <div className="hero_Wrapper">
       <div className="hero">
         <div className="container">
-          <div className="hero__scrollDown left animation_bounce-1">
-            <p>Scroll</p>
-            <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
-          </div>
           <h1 className="hero__heading">
             <span>Hello, I'm</span>
             <span className="rubberWords hero__name">

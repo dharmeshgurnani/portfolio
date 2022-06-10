@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import $ from 'jquery';
 import './style.scss';
 
 // @ts-ignore

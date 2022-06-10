@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../style/components/SectionTitle.scss';
 
 export default function SectionTitle({
@@ -11,4 +12,9 @@ export default function SectionTitle({
       <h2>{heading}</h2>
     </div>
   );
+}
+
+SectionTitle.propTypes = {
+  subheading : PropTypes.string,
+  heading : PropTypes.string,
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../style/components/PText.scss'
 
 export default function PText({ children }) {
@@ -8,3 +9,7 @@ export default function PText({ children }) {
     </div>
   );
 }
+
+PText.propTypes = {
+  children: PropTypes.string,
+};

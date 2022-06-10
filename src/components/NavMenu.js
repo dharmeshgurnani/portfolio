@@ -7,11 +7,12 @@ import '../style/components/NavMenu.scss';
 export default function NavMenu() {
 
   // for desktops
-  const mql = window.matchMedia('screen and (min-width: 992px)');
+  // Streamline this file require refectoring.
+  // const mql = window.matchMedia('screen and (min-width: 992px)');
   // for tablets
-  const desktopOnlyMq = window.matchMedia('only screen and (min-width: 992px)');
+  var desktopOnlyMq = window.matchMedia('only screen and (min-width: 992px)');
 
-  const [showNav, setShowNav] = useState(false);
+  var [showNav, setShowNav] = useState(false);
 
   //GSAP animations
   let NavMenuRef = useRef(null);
