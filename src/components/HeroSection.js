@@ -23,10 +23,6 @@ export default function HeroSection() {
     <div className="hero_Wrapper">
       <div className="hero">
         <div className="container">
-          <div className="hero__scrollDown left animation_bounce-1">
-            <p>Scroll</p>
-            <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
-          </div>
           <h1 className="hero__heading">
             <span>Hello, I'm</span>
             <span className="rubberWords hero__name">
