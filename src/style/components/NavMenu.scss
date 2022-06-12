@@ -6,7 +6,7 @@
   left: -15rem;
   width: 15rem;
   height: 100%;
-  background: var(--OnBackground);
+  background: var(--OnSecondary);
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -89,7 +89,7 @@
     left: 0;
     top: -15rem;
     padding: 0;
-    background: var(--OnBackground);
+    background: var(--OnSecondary);
     border-right: 0;
     border-bottom: 1px solid;
     .hide-item {

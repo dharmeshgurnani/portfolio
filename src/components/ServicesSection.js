@@ -39,7 +39,7 @@ export default function ServicesSection() {
   intersection && intersection.intersectionRatio < 0.2 ? fadeOut('.services__allItems .fadeInUp') : fadeInUp('.services__allItems .fadeInUp');
 
   return (
-    <div className="ServicesSection">
+    <div id="ServicesSection" className="ServicesSection">
       <div className="container">
         <SectionTitle subheading="What i can do" heading="Services" />
         <div ref ={SectionContainer} className="services__allItems ">

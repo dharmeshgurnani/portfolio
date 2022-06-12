@@ -6,7 +6,7 @@ import AboutImg from '../assets/images/about-sec-img.png';
 import '../style/components/AboutSection.scss'
 export default function AboutSection() {
   return (
-    <div className="AboutSection">
+    <div id="AboutSection" className="AboutSection">
       <div className="container">
         <div className="aboutSection__left">
           <SectionTitle subheading="Let me introduce myself" heading="About Me" />

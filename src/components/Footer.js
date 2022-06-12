@@ -10,27 +10,54 @@ import { BsInstagram } from 'react-icons/bs';
 export default function Footer() {
     return (
         <footer className="footer">
-            <div className="footer-left">
+            <div className="footer-main">
+                <div className="footer-left">
+                    <div className="footer-links">
+                        <a href="#">
+                            <label>Home</label>
+                        </a>
+                        <a href="#AboutSection">
+                            <label>About</label>
+                        </a>
+                        <a href="#ServicesSection">
+                            <label>services</label>
+                        </a>
+                    </div>
+                </div>
+
+                <div className="footer-right">
+                    <div className="footer-links">
+                        <a href="#/contact">
+                            <label>Contact</label>
+                        </a>
+                        <a href="#/projects">
+                            <label>Projects</label>
+                        </a>
+                        <a href="mailto:dharmeshgurnani@protonmail.com">
+                            <label>Email</label>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <hr className="hr-line" />
-            <div className="footer-right">
+
+            <div className="footer-bottom">
                 <div className="footer-links">
                     <IconContext.Provider value={{ className: 'footer-icons' }} >
                         <a href="https://www.github.com/dharmeshgurnani" target="_blank" rel="noreferrer" >
                             <BsGithub />
-                            Github
+                            <label>Github</label>
                         </a>
                         <a href="https://www.linkedin.com/in/dharmeshgurnani" target="_blank" rel="noreferrer" >
                             <BsLinkedin />
-                            Linkedin
+                            <label>Linkedin</label>
                         </a>
                         <a href="https://www.twitter.com/dharmeshgurnani" target="_blank" rel="noreferrer" >
                             <BsTwitter />
-                            Twitter
+                            <label>Twitter</label>
                         </a>
                         <a href="https://www.instagram.com/dharmeshgurnani" target="_blank" rel="noreferrer" >
                             <BsInstagram />
-                            Instagram
+                            <label>Instagram</label>
                         </a>
                     </IconContext.Provider>
                 </div>
