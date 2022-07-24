@@ -3,14 +3,38 @@ import { MdDesktopMac, MdCode, MdCloud } from 'react-icons/md';
 import SectionTitle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
 import '../style/components/ServicesSection.scss';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 
 export default function ServicesSection() {
   const SectionContainer = useRef(null);
+  const services__allItems = gsap.utils.toArray('.ServicesSectionItem');
+  services__allItems.forEach(services__allItem => {
+    const componentAnimation = gsap.fromTo(
+      services__allItem,
+      {
+        y: 300,
+        opacity:0
+      },
+      {
+        y: 0,
+        opacity:1,
+        duration: 1.4
+      }
+    );
+    ScrollTrigger.create({
+      trigger: services__allItem,
+      animation: componentAnimation
+    });
+  });
+
   return (
     <div id="ServicesSection" className="ServicesSection">
       <div className="container">
         <SectionTitle subheading="What i can do" heading="Services" />
-        <div ref ={SectionContainer} className="services__allItems ">
+        <div ref={SectionContainer} className="services__allItems ">
           <ServicesSectionItem
             icon={<MdDesktopMac />}
             title="web design"

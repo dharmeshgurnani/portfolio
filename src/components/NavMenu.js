@@ -22,21 +22,21 @@ export default function NavMenu() {
   let NavLink2 = useRef(null);
   var tl = gsap.timeline();
   useEffect(() => {
-    tl.add(gsap.fromTo(
+    gsap.fromTo(
       NavMenuRef,null,{
         left: 0,
         top: 0,
         ease: Power4.easeOut,
         duration: 1.5
       }
-    ));
+    );
 
     tl.add(gsap.fromTo(
       navLogoRef,null,
       {
         "font-size": "7rem",
         ease: Power4.easeOut,
-        duration: 1.5
+        duration: 2
       }
     ));
 
@@ -50,7 +50,7 @@ export default function NavMenu() {
         {
           top: 0,
           ease: Power4.easeOut,
-          duration: 1,
+          duration: 0.5,
           opacity: 1
         }
       ));
@@ -64,7 +64,7 @@ export default function NavMenu() {
         {
           top: 0,
           ease: Power4.easeOut,
-          duration: 0.5,
+          duration: 0.6,
           opacity: 1
         }
       ));
@@ -78,7 +78,7 @@ export default function NavMenu() {
         {
           top: 0,
           ease: Power4.easeOut,
-          duration: 1.5,
+          duration: 0.7,
           opacity: 1
         }
       ));
