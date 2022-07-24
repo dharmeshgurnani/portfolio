@@ -5,6 +5,7 @@
   background-image: linear-gradient(var(--deep-dark),var(--Background));
   border-bottom: 1px solid;
   border-top: 1px solid;
+  background-color: red !important;
 
   &:hover {
     border-color:  var(--hoverAcent);

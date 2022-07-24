@@ -10,25 +10,27 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function ServicesSection() {
   const SectionContainer = useRef(null);
-  const services__allItems = gsap.utils.toArray('.ServicesSectionItem');
+  setTimeout(()=>{
+    const services__allItems = gsap.utils.toArray('.ServicesSectionItem');
   services__allItems.forEach(services__allItem => {
     const componentAnimation = gsap.fromTo(
       services__allItem,
       {
-        y: 300,
-        opacity:0
+        y: window.innerHeight-400,
+        opacity:0.5
       },
       {
         y: 0,
         opacity:1,
-        duration: 1.4
+        duration: 0.7
       }
     );
     ScrollTrigger.create({
       trigger: services__allItem,
       animation: componentAnimation
     });
-  });
+  });},2000);
+  
 
   return (
     <div id="ServicesSection" className="ServicesSection">
