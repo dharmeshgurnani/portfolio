@@ -2,10 +2,9 @@ import $ from 'jquery';
 import eventEmitter from '../../utils/EventEmitter.js';
 
 $(document).ready(function () {
-    $("#ContactForm").submit((e) => {
+    $(document).on('submit', "#ContactForm", (e) => {
         e.preventDefault();
         console.info('submited');
-        $('#name').val()
         var requestJsonPayload = {
             name: $('#name').val() || 'dharmesh',
             email: $('#email').val() || 'dharmesh@test.com',
@@ -39,7 +38,7 @@ $(document).ready(function () {
                 }
             });
         });
-
+        return false;
     });
 });
 
@@ -47,7 +46,7 @@ eventEmitter.on('contact.submit', (eventObject) => {
     eventObject.element.submit();
 });
 
-// Registering to myEvent 
+// Registering to myEvent
 eventEmitter.on('contact.submit.success', (eventObject) => {
     window.console.info(eventObject);
 });
