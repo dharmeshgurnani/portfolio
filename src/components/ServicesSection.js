@@ -30,7 +30,7 @@ export default function ServicesSection() {
       animation: componentAnimation
     });
   });},2000);
-  
+
 
   return (
     <div id="ServicesSection" className="ServicesSection">
@@ -51,6 +51,11 @@ export default function ServicesSection() {
             icon={<MdCloud />}
             title="Salesforce Commerce Cloud"
             desc="Development and Management of E-Commerce websites On Salesforce Commerce Cloud platform"
+          />
+          <ServicesSectionItem
+            icon={<MdCloud />}
+            title="DevOps CICD"
+            desc="Build and development jenkins management and setup, Git Server Managment"
           />
         </div>
       </div>
