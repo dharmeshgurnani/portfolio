@@ -1,13 +1,23 @@
 .ContactForm {
     width: 100%;
+    background-image: linear-gradient(var(--deep-dark), var(--Background));
+    padding: 2rem;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-radius: 8px;
 
     .form-group {
         width: 100%;
         margin-bottom: 2rem;
+        border-top: 1px solid;
+        border-right: 1px solid;
+        border-radius: 8px;
+        padding: 1rem;
     }
 
     label {
         font-size: 1.8rem;
+        padding:1px;
     }
 
     input,
@@ -16,7 +26,8 @@
         font-size: 2rem;
         padding: 1.2rem;
         color: var(--gray-1);
-        background-color: var(--deep-dark);
+        background-color: var(--OnSurface);
+        opacity: 0.7;
         outline: none;
         border: none;
         border-radius: 8px;
