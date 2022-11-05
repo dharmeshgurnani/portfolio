@@ -15,7 +15,7 @@
   --OnPrimary     : #94d0cc;
   --OnSecondary   : #181818;
   --deep-dark     : #212529;
-  --hoverAcent    : #FFB902;
+  --hoverAccent    : #FFB902;
 }
 
 html {
@@ -110,7 +110,7 @@ hr {
   }
 }
 
-//rubberband animation
+//rubberBand animation
 .animation_rubber {
   animation: rubberBandEffect linear 1s;
   animation-fill-mode: both;

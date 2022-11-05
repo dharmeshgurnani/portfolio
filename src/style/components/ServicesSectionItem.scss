@@ -8,13 +8,13 @@
   background-color: red !important;
 
   &:hover {
-    border-color:  var(--hoverAcent);
+    border-color:  var(--hoverAccent);
 
     .servicesItem__icon svg{
-      fill:  var(--hoverAcent);
+      fill:  var(--hoverAccent);
     }
     .servicesItem__title {
-      color: var(--hoverAcent);
+      color: var(--hoverAccent);
     }
   }
 
