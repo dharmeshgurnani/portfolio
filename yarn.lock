@@ -1572,6 +1572,11 @@
     "schema-utils" "^3.0.0"
     "source-map" "^0.7.3"
 
+"@rcaferati/wac@^1.0.0":
+  "integrity" "sha512-7dVbzvcfL9o4UnrCaNeoIs7Ri9Ol+OMfpYYCJJV1dfm+5+pVM6DrvFjPzqifd2ACVABpXmwTQKy9KFxNm/7IdA=="
+  "resolved" "https://registry.npmmirror.com/@rcaferati/wac/-/wac-1.0.0.tgz"
+  "version" "1.0.0"
+
 "@rollup/plugin-babel@^5.2.0":
   "integrity" "sha512-WFfdLWU/xVWKeRQnKmIAQULUI7Il0gZnBIH/ZFO069wYIfPu+8zrfp/KMW0atmELoRDq8FbiP3VCss9MhCut7Q=="
   "resolved" "https://registry.npmmirror.com/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz"
@@ -7582,12 +7587,12 @@
     "regenerator-runtime" "^0.13.9"
     "whatwg-fetch" "^3.6.2"
 
-"react-awesome-button@^6.5.1":
-  "integrity" "sha512-94AS4BSIgRCMSHq8wcy3ztostjLK8cqjUX6DT5oWiYNs3uxLv5uk4yFMlzXBjo0I4TERLOZGn66q0xwb+xw5qw=="
-  "resolved" "https://registry.npmmirror.com/react-awesome-button/-/react-awesome-button-6.5.1.tgz"
-  "version" "6.5.1"
+"react-awesome-button@^7.0.4":
+  "integrity" "sha512-kwLoIgliYxvyxkb0zCZKC0qvDpazczcyWNA854YhNcs/9BYMPXrk1o0hyBKM11yhIBgUiEES7Bihj2s9LClV2Q=="
+  "resolved" "https://registry.npmmirror.com/react-awesome-button/-/react-awesome-button-7.0.4.tgz"
+  "version" "7.0.4"
   dependencies:
-    "web-animation-club" "^0.6.0"
+    "@rcaferati/wac" "^1.0.0"
 
 "react-dev-utils@^12.0.1":
   "integrity" "sha512-84Ivxmr17KjUupyqzFode6xKhjwuEJDROWKJy/BthkL7Wn6NJ8h4WE6k/exAv6ImS+0oZLRRW5j/aINMHyeGeQ=="
@@ -9061,11 +9066,6 @@
   "version" "1.7.3"
   dependencies:
     "minimalistic-assert" "^1.0.0"
-
-"web-animation-club@^0.6.0":
-  "integrity" "sha512-9W+EQu1HiaPLe/7WZlhJ2ULqQ4VL80RPDYW+ZcjfTKp6ayOuT1k3SVO6+tu0VBRmOqueJ/mrG+rjjInIv8Aglg=="
-  "resolved" "https://registry.npmmirror.com/web-animation-club/-/web-animation-club-0.6.0.tgz"
-  "version" "0.6.0"
 
 "web-vitals@^3.1.0":
   "integrity" "sha512-zCeQ+bOjWjJbXv5ZL0r8Py3XP2doCQMZXNKlBGfUjPAVZWokApdeF/kFlK1peuKlCt8sL9TFkKzyXE9/cmNJQA=="
