@@ -1,35 +1,25 @@
 import React from 'react';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import NavMenu from './components/NavMenu';
 import Home from './pages/home';
+import {BrowserRouter, Routes, Route,} from "react-router-dom";
 import Projects from './pages/projects';
-import Game from './pages/game';
+//import Game from './pages/game';
 import Contact from './pages/contact';
 import Footer from './components/Footer';
 function App() {
   return (
-    <>
-      <Router>
-        <NavMenu />
-        <div className="mainContent">
-        <Switch>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/games">
-            <Game />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-        </div>
-        <Footer />
-      </Router>
-    </>
+    <BrowserRouter>
+      <NavMenu />
+      <div className="mainContent">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path=":projects/*" element={<Projects />} />
+          <Route path=":contact/*" element={<Contact />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </div>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
