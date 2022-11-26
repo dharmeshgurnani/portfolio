@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState, FC } from 'react';
 import CustomCursorContext, { CursorLookType } from './CustomCursorContext';
 

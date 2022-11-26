@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { createContext } from 'react';
 
 export type CursorLookType =
