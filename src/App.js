@@ -12,10 +12,10 @@ function App() {
       <NavMenu />
       <div className="mainContent">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path=":projects/*" element={<Projects />} />
-          <Route path=":contact/*" element={<Contact />} />
-          <Route path="*" element={<Home />} />
+          <Route path="/portfolio" element={<Home />} />
+          <Route path="/portfolio/:projects/*" element={<Projects />} />
+          <Route path="/portfolio/:contact/*" element={<Contact />} />
+          <Route path="/portfolio/*" element={<Home />} />
         </Routes>
       </div>
       <Footer />
