@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App';
 import CustomCursor from './components/CustomCursor';
 import CustomCursorManager from './components/CustomCursor/context/manager.tsx';
@@ -9,14 +9,14 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import './style/GlobalStyle.scss';
 import './style/Typography.scss';
 
-ReactDOM.render(
+const root = createRoot(document.getElementById('root'));
+root.render(
   <CustomCursorManager>
     <CustomCursor />
     <React.StrictMode>
       <App />
     </React.StrictMode>
-  </CustomCursorManager>,
-  document.getElementById('root')
+  </CustomCursorManager>
 );
 
 
