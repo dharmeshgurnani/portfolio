@@ -8,6 +8,14 @@ import Projects from './pages/projects';
 import Contact from './pages/contact';
 import Footer from './components/Footer';
 function App() {
+
+  //TODO: don not work on partial load.
+  window.addEventListener('load', function () {
+    if (window.location.hash.split('#').length>2) {
+      document.getElementById(window.location.hash.split('#')[2]).scrollIntoView()
+    }
+  });
+
   return (
     <HashRouter>
       <NavMenu />

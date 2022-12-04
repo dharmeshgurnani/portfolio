@@ -17,12 +17,20 @@ export default function Footer() {
                         <a href="/">
                             <label>Home</label>
                         </a>
-                        <a href="#AboutSection">
+                        <div onClick={()=>{
+                            window.location.hash=='#/' ?
+                            document.getElementById('AboutSection').scrollIntoView()
+                            :window.location.replace('/portfolio/#/#AboutSection')}
+                            }>
                             <label>About</label>
-                        </a>
-                        <a href="#ServicesSection">
+                        </div>
+                        <div onClick={()=>{
+                            window.location.hash=='#/' ?
+                            document.getElementById('ServicesSection').scrollIntoView()
+                            :window.location.replace('/portfolio/#/#ServicesSection')}
+                            }>
                             <label>services</label>
-                        </a>
+                        </div>
                     </div>
                 </div>
 
