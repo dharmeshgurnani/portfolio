@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="footer-main">
                 <div className="footer-left">
                     <div className="footer-links">
-                        <a href="/portfolio/">
+                        <a href="/">
                             <label>Home</label>
                         </a>
                         <a href="#AboutSection">
@@ -28,10 +28,10 @@ export default function Footer() {
 
                 <div className="footer-right">
                     <div className="footer-links">
-                        <a href="/portfolio/contact">
+                        <a href="#/contact">
                             <label>Contact</label>
                         </a>
-                        <a href="/portfolio/projects">
+                        <a href="#/projects">
                             <label>Projects</label>
                         </a>
                         <a href="mailto:dharmeshgurnani@protonmail.com">

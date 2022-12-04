@@ -10,7 +10,7 @@ export default function Button({
 }) {
   return (
     <div className="button-wrapper">
-      <AwesomeButton type="primary" href={"/portfolio"+btnLink} >
+      <AwesomeButton type="primary" href={"#"+btnLink} >
         {btnText}
       </AwesomeButton>
     </div>
