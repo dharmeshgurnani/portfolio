@@ -6,7 +6,7 @@ import eventEmitter from '../../src/utils/EventEmitter.js'
 import { AwesomeButtonProgress } from 'react-awesome-button';
 
 /* TODO: [bug] api calls not happing on first call
-** [Description] page gets reloaded form is able to submit only if its been refreshed once thorugh the bug.  
+** [Description] page gets reloaded form is able to submit only if its been refreshed once thorough the bug.  
 */
 
 export default function ContactForm() {

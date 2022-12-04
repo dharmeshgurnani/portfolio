@@ -15,6 +15,11 @@
         padding: 1rem;
     }
 
+    .aws-btn--progress .aws-btn__content > span > span {
+        background-color: var(--gray-1);
+        color: var(--OnSecondary)
+    }
+
     label {
         font-size: 1.8rem;
         padding:1px;
