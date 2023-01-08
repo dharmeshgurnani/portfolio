@@ -3,7 +3,7 @@ import { MdArrowForward, MdArrowBack } from 'react-icons/md';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import testimonials from '../assets/data/testimonials';
+import testimonials from '../scripts/config/testimonials';
 
 import '../client/scss/components/TestimonialsSection.scss'
 

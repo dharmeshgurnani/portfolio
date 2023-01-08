@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
-import ProjectImg from '../images/projectImg.png';
-import sfccproject from '../images/sfccproject.png'
-import alphanoise from '../images/alphanoise.png'
+import ProjectImg from '../../assets/images/projectImg.png';
+import sfccproject from '../../assets/images/sfccproject.png'
+import alphanoise from '../../assets/images/alphanoise.png'
 const projects = [
   {
     id: uuidv4(),

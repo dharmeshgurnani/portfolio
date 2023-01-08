@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { MdSearch } from 'react-icons/md';
 import SectionTitle from '../components/SectionTitle';
-import ProjectsInfo from '../assets/data/projects';
+import ProjectsInfo from '../scripts/config/projects';
 import Particles from "react-tsparticles";
 import particlesOptions from "../particlesProjects";
 import ProjectItem from '../components/ProjectItem';

@@ -4,7 +4,7 @@ import SwiperCore, { Navigation } from 'swiper';
 import ProjectItem from './ProjectItem';
 import SectionTitle from './SectionTitle';
 import 'swiper/swiper-bundle.min.css';
-import projects from '../assets/data/projects';
+import projects from '../scripts/config/projects';
 import '../client/scss/components/ProjectsSection.scss';
 
 // install Swiper modules
