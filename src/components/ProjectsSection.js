@@ -13,7 +13,7 @@ SwiperCore.use([Navigation]);
 export default function ProjectsSection() {
   // console.log(projects);
   return (
-    <div className='ProjectsSection'>
+    <div className='ProjectsSection' data-aos="fade-up">
       <div className="container">
         <SectionTitle subheading="some of my recent works" heading="Projects" />
         <div className="projects__allItems">

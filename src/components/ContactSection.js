@@ -7,7 +7,7 @@ import '../style/components/ContactSection.scss';
 
 export default function ContactSection() {
   return (
-    <div className="ContactSection">
+    <div className="ContactSection" data-aos="fade-up">
       <div className="container">
         <SectionTitle heading="contact" subheading="get in touch" />
         <div className="contactSection__wrapper">

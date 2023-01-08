@@ -14,7 +14,7 @@ export default function ContactForm() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   return (
-    <form id='ContactForm' className="ContactForm">
+    <form id='ContactForm' className="ContactForm" data-aos="flip-left">
       <div className="form-group">
         <label htmlFor="name">
           Your Name

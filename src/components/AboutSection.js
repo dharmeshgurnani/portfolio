@@ -6,7 +6,7 @@ import SectionTitle from './SectionTitle';
 import '../style/components/AboutSection.scss'
 export default function AboutSection() {
   return (
-    <div id="AboutSection" className="AboutSection">
+    <div id="AboutSection" className="AboutSection" data-aos="fade-up">
       <div className="container">
         <div className="aboutSection__left">
           <SectionTitle subheading="Let me introduce myself" heading="About Me" />

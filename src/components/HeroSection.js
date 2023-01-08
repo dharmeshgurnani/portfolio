@@ -77,7 +77,7 @@ export default function HeroSection() {
   }, 1000);
 
   return (
-    <div className="hero_Wrapper">
+    <div className="hero_Wrapper" data-aos="fade-up">
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading">

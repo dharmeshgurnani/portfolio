@@ -5,11 +5,14 @@ import CustomCursor from './components/CustomCursor';
 import CustomCursorManager from './components/CustomCursor/context/manager.tsx';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 import './style/GlobalStyle.scss';
 import './style/Typography.scss';
 
 const root = createRoot(document.getElementById('root'));
+AOS.init();
+
 root.render(
   <CustomCursorManager>
     <CustomCursor />

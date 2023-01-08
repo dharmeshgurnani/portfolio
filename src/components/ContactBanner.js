@@ -30,7 +30,7 @@ export default function ContactBanner() {
   });
 
   return (
-    <div className="ContactBanner">
+    <div data-aos="fade-up" className="ContactBanner">
       <div className="container">
         <div ref ={contactBannerRef} className="contactBanner__wrapper">
           <PText>

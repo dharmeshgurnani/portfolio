@@ -9,7 +9,7 @@ export default function ContactInfoItem({
   text = 'I need text ',
 }) {
   return (
-    <div className="contactinfoItem">
+    <div className="contactinfoItem" data-aos="flip-left" >
       <div className="icon">{icon}</div>
       <div className="info">
         <PText>{text}</PText>

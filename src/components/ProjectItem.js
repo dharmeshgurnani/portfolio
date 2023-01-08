@@ -10,7 +10,7 @@ export default function ProjectItem({
   href = '#'
 }) {
   return (
-    <div className='ProjectItem'>
+    <div className='ProjectItem' data-aos="flip-left">
       <a href={href} className="projectItem__img">
         <img src={img} alt="project img" />
       </a>

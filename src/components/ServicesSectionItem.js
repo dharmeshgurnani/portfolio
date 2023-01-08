@@ -10,7 +10,7 @@ export default function ServicesSectionItem({
   desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ok",
 }) {
   return (
-    <div className="ServicesSectionItem servicesItem">
+    <div className="ServicesSectionItem servicesItem" data-aos="fade-up" >
       <div className="servicesItem__icon">{icon}</div>
       <div className="servicesItem__title">{title}</div>
       <PText>{desc}</PText>
