@@ -3,7 +3,7 @@ import { MdEmail, MdLocalPhone } from 'react-icons/md';
 import ContactForm from './ContactForm';
 import ContactInfoItem from './ContactInfoItem';
 import SectionTitle from './SectionTitle';
-import '../style/components/ContactSection.scss';
+import '../client/scss/components/ContactSection.scss';
 
 export default function ContactSection() {
   return (

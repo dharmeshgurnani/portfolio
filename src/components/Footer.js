@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/components/Footer.scss'
+import '../client/scss/components/Footer.scss'
 
 // BootStrap Icons
 import { IconContext } from "react-icons";

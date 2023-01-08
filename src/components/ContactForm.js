@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import $ from 'jquery';
-import '../style/components/ContactForm.scss'
+import '../client/scss/components/ContactForm.scss'
 import '../client/components/ContactForm.js'
 import eventEmitter from '../../src/utils/EventEmitter.js'
 import { AwesomeButtonProgress } from 'react-awesome-button';

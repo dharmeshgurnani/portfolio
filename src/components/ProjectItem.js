@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ProjectImg from '../assets/images/projectImg.png';
-import '../style/components/ProjectItem.scss';
+import '../client/scss/components/ProjectItem.scss';
 
 export default function ProjectItem({
   img = ProjectImg,

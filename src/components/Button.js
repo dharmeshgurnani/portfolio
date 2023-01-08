@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
-import "../style/components/Button.scss"
+import "../client/scss/components/Button.scss"
 
 export default function Button({
   btnText = 'test',

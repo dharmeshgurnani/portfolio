@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { MdClose, MdMenu } from 'react-icons/md';
 import { gsap, Power4} from "gsap";
-import '../style/components/NavMenu.scss';
+import '../client/scss/components/NavMenu.scss';
 
 export default function NavMenu() {
 

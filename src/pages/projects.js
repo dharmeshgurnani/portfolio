@@ -5,7 +5,7 @@ import ProjectsInfo from '../assets/data/projects';
 import Particles from "react-tsparticles";
 import particlesOptions from "../particlesProjects";
 import ProjectItem from '../components/ProjectItem';
-import '../style/Pages/projects.scss';
+import '../client/scss/Pages/projects.scss';
 
 console.log(particlesOptions());
 export default function Projects() {

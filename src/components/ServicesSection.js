@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { MdDesktopMac, MdCode, MdCloud } from 'react-icons/md';
 import SectionTitle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
-import '../style/components/ServicesSection.scss';
+import '../client/scss/components/ServicesSection.scss';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);

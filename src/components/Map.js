@@ -1,6 +1,6 @@
 import React from 'react';
 import PText from './PText';
-import '../style/components/Map.scss';
+import '../client/scss/components/Map.scss';
 
 export default function Map() {
   return (

@@ -1,5 +1,5 @@
 import React , { useRef } from 'react';
-import '../style/components/ContactBanner.scss';
+import '../client/scss/components/ContactBanner.scss';
 import Button from './Button';
 import PText from './PText';
 import { gsap } from "gsap";

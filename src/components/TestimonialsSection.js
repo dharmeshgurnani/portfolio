@@ -5,7 +5,7 @@ import PText from './PText';
 import SectionTitle from './SectionTitle';
 import testimonials from '../assets/data/testimonials';
 
-import '../style/components/TestimonialsSection.scss'
+import '../client/scss/components/TestimonialsSection.scss'
 
 
 

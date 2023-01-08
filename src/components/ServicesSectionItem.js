@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { MdDesktopMac } from 'react-icons/md';
 import PText from './PText';
-import '../style/components/ServicesSectionItem.scss';
+import '../client/scss/components/ServicesSectionItem.scss';
 
 export default function ServicesSectionItem({
   icon = <MdDesktopMac />,

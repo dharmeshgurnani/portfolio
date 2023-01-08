@@ -4,7 +4,7 @@ import $ from 'jquery';
 import Button from './Button';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 import PText from './PText';
-import '../style/components/HeroSection.scss'
+import '../client/scss/components/HeroSection.scss'
 import { gsap, Power4 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);

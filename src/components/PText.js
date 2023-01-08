@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../style/components/PText.scss'
+import '../client/scss/components/PText.scss'
 
 export default function PText({ children }) {
   return (

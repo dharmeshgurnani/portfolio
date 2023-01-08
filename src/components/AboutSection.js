@@ -3,7 +3,7 @@ import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
 // import AboutImg from '../assets/images/about-sec-img.png';
-import '../style/components/AboutSection.scss'
+import '../client/scss/components/AboutSection.scss'
 export default function AboutSection() {
   return (
     <div id="AboutSection" className="AboutSection" data-aos="fade-up">
