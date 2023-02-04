@@ -1,7 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import { MdClose, MdMenu } from 'react-icons/md';
-import { gsap, Power4} from "gsap";
 import '../client/scss/components/NavMenu.scss';
 
 export default function NavMenu() {
@@ -9,84 +8,12 @@ export default function NavMenu() {
   // for desktops
   // Streamline this file require refectoring.
   // const mql = window.matchMedia('screen and (min-width: 992px)');
-  // for tablets
-  var desktopOnlyMq = window.matchMedia('only screen and (min-width: 992px)');
+
 
   var [showNav, setShowNav] = useState(false);
 
-  //GSAP animations
-  let NavMenuRef = useRef(null);
-  let navLogoRef = useRef(null);
-  let NavLink0 = useRef(null);
-  let NavLink1 = useRef(null);
-  let NavLink2 = useRef(null);
-  var tl = gsap.timeline();
-  useEffect(() => {
-    gsap.fromTo(
-      NavMenuRef,null,{
-        left: 0,
-        top: 0,
-        ease: Power4.easeOut,
-        duration: 1.5
-      }
-    );
-
-    tl.add(gsap.fromTo(
-      navLogoRef,null,
-      {
-        "font-size": "7rem",
-        ease: Power4.easeOut,
-        duration: 2
-      }
-    ));
-
-    if(desktopOnlyMq.matches){
-      tl.add(gsap.fromTo(
-        NavLink0,{
-          position: 'relative',
-          top: 800,
-          opacity: 0
-        },
-        {
-          top: 0,
-          ease: Power4.easeOut,
-          duration: 0.5,
-          opacity: 1
-        }
-      ));
-  
-      tl.add(gsap.fromTo(
-        NavLink1,{
-          position: 'relative',
-          top: 700,
-          opacity: 0
-        },
-        {
-          top: 0,
-          ease: Power4.easeOut,
-          duration: 0.6,
-          opacity: 1
-        }
-      ));
-  
-      tl.add(gsap.fromTo(
-        NavLink2,{
-          position: 'relative',
-          top: 600,
-          opacity: 0
-        },
-        {
-          top: 0,
-          ease: Power4.easeOut,
-          duration: 0.7,
-          opacity: 1
-        }
-      ));
-    }
-  },[]);
-
   return (
-    <div className="NavMenu" ref={el => {NavMenuRef = el}}>
+    <div className="NavMenu" style={{opacity: 1}} data-aos="fade-right">
       <div className="mobile-navLogo">
         <div className="stack" style={{'--stacks': '3'}}>
           <span style={{'--index':0}}>DG</span>
@@ -114,15 +41,18 @@ export default function NavMenu() {
         >
           <MdClose />
         </div>
-        <div className="navLogo" ref={el => {navLogoRef = el}}>
-          <div className="stack" style={{'--stacks': '3'}}>
+        <div className="navLogo" >
+          <div className="stack"
+          style={{'--stacks': '3'}}
+          data-aos-delay="800" data-aos="zoom-in"
+          >
             <span style={{'--index':0}}>DG</span>
             <span style={{'--index':1}}>DG</span>
             <span style={{'--index':2}}>DG</span>
           </div>
         </div>
 
-        <div className={"NavlinkWrapper"}>
+        <div className={"NavlinkWrapper"} >
           <li>
             <NavLink
               to="/"
@@ -131,10 +61,9 @@ export default function NavMenu() {
               role="button"
               onKeyDown={() => setShowNav(!showNav)}
               tabIndex={0}
-              ref={el => {NavLink0 = el}}
-            >
-              Home
-            </NavLink>
+              data-aos-delay="800" data-aos="fade-right"
+              style={{opacity: 1}}
+            > Home </NavLink>
           </li>
           <li>
             <NavLink
@@ -143,7 +72,7 @@ export default function NavMenu() {
               role="button"
               onKeyDown={() => setShowNav(!showNav)}
               tabIndex={0}
-              ref={el => {NavLink1 = el}}
+              data-aos-delay="900" data-aos="fade-right"
             >
               Projects
             </NavLink>
@@ -155,7 +84,7 @@ export default function NavMenu() {
               role="button"
               onKeyDown={() => setShowNav(!showNav)}
               tabIndex={0}
-              ref={el => {NavLink2 = el}}
+              data-aos-delay="1000" data-aos="fade-right"
             >
               Contact
             </NavLink>
