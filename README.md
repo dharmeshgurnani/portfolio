@@ -26,6 +26,7 @@ You can often find me prattling about all sorts of things over on
 [![Linkedin Badge](https://img.shields.io/badge/-dharmeshgurnani-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/dharmeshgurnani/)](https://www.linkedin.com/in/dharmeshgurnani/)
 
 ---
+---
 
 **OS,Languages, and tools i use:**
 <table>
